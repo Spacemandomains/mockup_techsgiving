@@ -1,0 +1,135 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1b3440 10%, #191919 50%, #1b3440 90%); /* Gradient from blue to black to blue */
+    color: #ffffff; /* White text color */
+}
+
+/* Section styling */
+.section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 32px; /* Space between columns */
+    max-width: 1200px; /* Max width of the container */
+    align-items: center;
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Add padding for smaller screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Text content styling */
+.text-content {
+    max-width: 600px; /* Width limit for text */
+}
+
+/* Main heading styling */
+.main-heading {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Description styling */
+.description {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Updated Button styling */
+.button {
+    display: inline-block;
+    padding: 20px 36px;
+    background-color: #003366; /* Dark blue color */
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #002244; /* Slightly darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Image container styling */
+.image-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Program image styling */
+.program-image {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px; /* Rounded corners */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visual */
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        text-align: center;
+        padding: 0; /* Remove padding for smaller screens */
+    }
+    
+    .main-heading {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .description {
+        font-size: 18px; /* Slightly smaller text size */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%; /* Full-width button */
+        padding: 16px;
+    }
+}
+
+/* Rounded button style */
+.cta-button-rounded {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #003366; /* Green color */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    margin: 10px 0; /* Added margin for spacing */
+}
+  
